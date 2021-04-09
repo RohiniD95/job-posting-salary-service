@@ -15,10 +15,10 @@ public class SalaryController {
 	@Autowired
 	public SalaryService service;
 	
-	@RequestMapping("/{jptId}")
-	public Salary getSalary(@PathVariable("jptId")String jptId) {
+	@RequestMapping("/{salaryId}")
+	public Salary getSalary(@PathVariable("salaryId")String salaryId) {
 		
-		Salary salary = service.getSalary(jptId);
+		Salary salary = service.getSalary(salaryId);
 		
 		return salary;
 	}

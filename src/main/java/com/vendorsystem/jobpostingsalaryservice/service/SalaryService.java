@@ -9,12 +9,12 @@ public class SalaryService {
 	@Autowired
 	public Salary salary;
 	
-	public Salary getSalary(String jptId) {
-		if (jptId.equals(jptId)) {
-			salary.setSalaryId("Z10233");
+	public Salary getSalary(String salaryId) {
+		if (salaryId.equals(salaryId)) {
+			salary.setSalaryId(salaryId);
 			salary.setMinSalary("3L");
 			salary.setMaxSalary("10L");
-			salary.setJptId(jptId);
+			salary.setJptId("Z1254308657");
 		}
 		return salary;
 	}
